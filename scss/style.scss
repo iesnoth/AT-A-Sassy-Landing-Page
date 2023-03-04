@@ -1,3 +1,6 @@
+@import "config";
+@import "btnConfig";
+@import "utilities";
 
 * {
   box-sizing: border-box;
@@ -20,6 +23,13 @@ a {
 }
 
 .hero {
+  @include set-bg($primary-color);
+  height: 600px;
+
+  nav {
+    display: inline-block;
+  }
+
   // This is where the bulk of the SCSS styling needs to be done
 
   // Take a look at the other files we've built already. How can they be useful here?
@@ -28,16 +38,24 @@ a {
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
+
 }
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
 // While you don't have to mess with it, it would be advisable to attempt to understand its functionality.
-$spaceamounts: (1,2,3,4,5);
+$spaceamounts: (
+  1,
+  2,
+  3,
+  4,
+  5
+);
 
 @each $space in $spaceamounts {
   .m-#{$space} {
     margin: #{$space}rem;
   }
+
   .my-#{$space} {
     margin: #{$space}rem 0;
   }
@@ -45,6 +63,7 @@ $spaceamounts: (1,2,3,4,5);
   .p-#{$space} {
     padding: #{$space}rem;
   }
+
   .py-#{$space} {
     padding: #{$space}rem 0;
   }
