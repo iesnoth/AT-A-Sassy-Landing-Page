@@ -12,12 +12,7 @@
     }
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
     @extend %btn;
-    @include set-bg($primary-color);
-}
-
-.btn-secondary {
-    @extend %btn;
-    @include set-bg($secondary-color)
+    @include set-bg($secondary-color);
 }

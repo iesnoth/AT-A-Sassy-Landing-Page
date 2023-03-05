@@ -5,22 +5,17 @@ box {
   overflow: auto;
 }
 
-.btn-secondary, .btn-primary {
+.btn-primary, .btn-secondary {
   display: inline-block;
   border-radius: 5px;
   padding: 8px 20px;
   margin: 3px;
 }
-.btn-secondary:hover, .btn-primary:hover {
+.btn-primary:hover, .btn-secondary:hover {
   transform: scale(0.8);
 }
 
-.btn-primary {
-  background-color: #000814;
-  color: white;
-}
-
-.btn-secondary {
+.btn-primary, .btn-secondary {
   background-color: #a2d0fc;
   color: black;
 }
@@ -55,7 +50,43 @@ a {
 .hero {
   background-color: #000814;
   color: white;
-  height: 600px;
+  height: 80vh;
+}
+.hero nav {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.hero nav li {
+  padding: 20px;
+}
+.hero nav a {
+  text-decoration: none;
+  color: white;
+}
+.hero nav a:hover {
+  color: #a2d0fc;
+}
+.hero nav h1 {
+  font-size: 50px;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+.hero-content .text {
+  width: 30%;
+}
+.hero-content img {
+  width: 40%;
 }
 
 .m-1 {
